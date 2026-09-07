@@ -263,6 +263,7 @@ function renderCourseOptions($event): void
 		['Nebenfach', 'form_subsidiary']
 	];
 	?>
+<<<<<<< HEAD
 		<div class="select-wrapper">
 			<select class="form-studiengang" name="studiengang" required>
 				<option value="" disabled selected></option>
@@ -276,6 +277,19 @@ function renderCourseOptions($event): void
 				} ?>
 			</select>
 		</div>
+=======
+		<select class="form-studiengang" name="studiengang" required>
+			<option value="" disabled selected></option>
+			<?php 
+			foreach ($courses as $course) {
+				?>
+				<option value="<?= $course[0] ?>">
+					<?= $i18n[$course[1]] ?>
+				</option>
+			<?php 
+			} ?>
+		</select>
+>>>>>>> 773b3b3 (changing studyprogram form (radio->dropdown))
 	<br>
 
     <br><?= $i18n['form_degree'] ?>:<br>
